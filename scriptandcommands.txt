@@ -1,0 +1,59 @@
+1. Write shell scripts to do the following:
+
+
+• Display OS version, release number, kernel version
+
+echo ' kernel in your system'
+uname -a
+#ubuntu version
+echo 'ubuntu version and release number '
+lsb_release -a
+
+
+
+• Display top 10 processes in descending order
+echo 'Top processes in descending order'
+ps aux|sort -r
+
+
+
+• Display processes with highest memory usage.
+echo 'Top memory consuming processes'
+ps aux --sort -rss|head
+
+
+
+• Display current logged in user and log name.
+echo 'current login user and log name'
+w
+
+// ye upar 'w' galti se nahi hua hai, utna sa hi hai command
+
+
+
+
+
+• Display current shell, home directory, operating system type, current Path setting,
+current working directory.
+
+echo ' Current shell'
+ps -p $$
+echo 'Display home directory'
+ls
+echo 'current working directory'
+pwd
+echo 'operating system type'
+uname -r
+
+
+
+
+2. Implement cp and mv command
+
+• cp
+cp file1_path file2_path
+creates copy of file file1 and saves at path file2_path
+
+• mv
+mv oldname newname
+renames files or moves them (cut and paste)
